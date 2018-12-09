@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>HTTP</title>
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'css/print/pdf.css'
+        : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>HTTP</h1>
+          <p>
+            <span
+              >Created by
+              <a target="_blank" href="https://github.com/kulinar310">Alexander Kulikov</a></span
+            >
+          </p>
+          <aside class="notes">
+            Hello. My name is Alexander Kulikov. The theme of my presentation is HTTP protocol.
+          </aside>
+        </section>
+        <section>
+          <p>What is a HTTP ?</p>
+          <img src="img/Wat8.jpg" alt="img" />
+          <aside class="notes">What is HTTP you ask?</aside>
+        </section>
+        <section>
+          <p highlight-red>HTTP - HyperText Transfer Protocol</p>
+          <aside class="notes">Http stands for hypertext transfer protocol.</aside>
+        </section>
+        <section>
+          <p>Timothy John Berners-Lee</p>
+          <img src="img/tim-berners-lee-3.jpg" width="400" alt="img" />
+          <aside class="notes">
+            The founder of this protocol is Timothy John Berners-Lee. Timothy John Berners-Lee is a
+            famous British scientist, inventor of the World Wide Web, and technologies such as URI,
+            URL, HTTP, HTML. I think this man is really cool. The HTTP protocol is the basis of the
+            World Wide Web we use it when viewing pages in a browser.
+          </aside>
+        </section>
+        <section>
+          <h3>Versions Protocol HTTP:</h3>
+          <ul>
+            <li>HTTP 0.9 in 1992</li>
+            <li>HTTP 1.0 in 1996</li>
+            <li>HTTP 1.1 in 1999</li>
+            <li>HTTP 2.0 in 2015</li>
+          </ul>
+          <aside class="notes">
+            There are several versions of this protocol. The first experimental version was called
+            --HTTP zero point nine (0.9) was developed in nineteen ninety-two years (1992). The very
+            first official version --HTTP one (1) was adopted as standard in nineteen ninety-six
+            years (1996) And very soon the extended protocol version was adopted --HTTP one point
+            one (1.1) in nineteen ninety-nine years (1999) this version is still used In two
+            thousand and fifteen (2015), a new version of the protocol appeared. -- HTTP two (2) now
+            this version is only being commissioned and does not support all browsers. All data on
+            the Internet is transmitted via this protocol. And is a way to communicate between the
+            client and the server.
+          </aside>
+        </section>
+        <section>
+          <img src="img/how.jpg" alt="img" />
+          <aside class="notes">How does this protocol work?</aside>
+        </section>
+        <section>
+          <img src="img/HTTP-Protocol.png" alt="img" />
+          <aside class="notes">
+            See it works quite simple. The mode of operation of this protocol is request-response.
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/1.png" alt="" />
+          <aside class="notes">
+            If we want to make a request from the client to the server, then we need to say in some
+            way what we need. It is also necessary to transfer additional information to the server.
+            For example, we want to go to YouTube.com. In this case, we need to pass a method for
+            how I make this request, this is a Get method, then the version of the protocol that I
+            use this request is transmitted. Then I have to say where I am addressing on this server
+            in this case YouTube.com.
+          </aside>
+        </section>
+
+        <section>
+          <img src="img/2.png" alt="" />
+          <aside class="notes">And when the server understands this message,</aside>
+        </section>
+        <section>
+          <img src="img/3.png" alt="" />
+          <aside class="notes">it will be able to find the requested data and</aside>
+        </section>
+        <section>
+          <img src="img/4.png" alt="" />
+          <aside class="notes">
+            send this data to the client in the form of a code and send a response similar to the
+            one we sent when accessing the server.
+          </aside>
+        </section>
+        <section>
+          <img src="img/5.png" alt="" />
+          <aside class="notes">
+            Let's consider what methods can be used when a client accesses the server.
+          </aside>
+        </section>
+        <section>
+          <h3>Methods HTTP</h3>
+          <ul style="list-style:none">
+            <li><span style="color:aqua">GET</span> - the transfer request of the web page</li>
+            <li><span style="color:aqua">POST</span> - data transfer to web server</li>
+            <li><span style="color:aqua">HEAD</span> - requests only the page title</li>
+            <li><span style="color:aqua">PUT</span> - the room page to your web server</li>
+            <li><span style="color:aqua">DELETE</span> - deleting a page from a web server</li>
+            <li><span style="color:aqua">TRACE</span> - helps to track page changes</li>
+            <li>
+              <span style="color:aqua">OPTIONS</span> - helps to know what methods are supported
+            </li>
+            <li>
+              <span style="color:aqua">CONNECT</span> - allows you to connect to the web server via
+              Proxy
+            </li>
+          </ul>
+          <aside class="notes">
+            Most popular methods are: Method GET – is request to send a web page, and the POST
+            method - transfer data to a web server for processing (for example, when we write
+            comments to videos on YouTube) Further rarely used methods: method HEAD - requests only
+            the page header (this is like the GET method only without the message body), method PUT
+            - placing the page on a web server, DELETE - delete a page from the web server, method
+            TRACE - helps to track changes to the page, namely what changes it makes, OPTIONS -
+            helps to find out which methods are supported for a specific resource on a web server,
+            CONNECT - allows you to connect to the web server through a proxy.
+          </aside>
+        </section>
+        <section>
+          <img src="img/6.png" alt="" />
+          <aside class="notes">
+            In response, the server sends information where the protocol field is indicated in the
+            first field, which is used, then a three-digit number indicating the request processing
+            status. There are the following statuses:
+          </aside>
+        </section>
+        <section>
+          <h3>Statuses HTTP</h3>
+          <ul style="list-style:none">
+            <li><span style="color:aqua">1XX</span> - informational messages</li>
+            <li>
+              <span style="color:aqua">2XX</span> - successful implementation (for example 200 OK)
+            </li>
+            <li><span style="color:aqua">3XX</span> - redirect</li>
+            <li>
+              <span style="color:aqua">4XX</span> - error on the client side(for example 404 - page
+              not found)
+            </li>
+            <li><span style="color:aqua">5XX</span> - server error</li>
+          </ul>
+          <aside class="notes">
+            1xx - statuses starting with one are used to send informational messages 2xx - statuses
+            that begin with the number two, indicate that the request was completed successfully 3xx
+            - statuses that start with the number three speak of page redirection 4xx - statuses
+            that start with the number four indicate that the error was made on the client side 5xx
+            - statuses that start at number five indicate an error on the server side Several
+            headers follow, such as the type of web page being transmitted, the length of the page,
+            and the code of the web page. After the transfer of the web page, the connection is
+            broken.
+          </aside>
+        </section>
+        <section>
+          <h2>Modern Web</h2>
+          <img src="img/cover-dribbble.png" height="500" alt="img" />
+          <aside class="notes">
+            Now the modern WEB is much more complicated. Instead of static web pages that are stored
+            on disk server, can be used by programs that generate dynamic Web pages
+          </aside>
+        </section>
+        <section>
+          <img src="img/shema.png" alt="img" />
+          <aside class="notes">
+            In doing so, they can connect to databases or other servers to obtain the necessary
+            data. Modern web pages are very complex; they include a large number of additional
+            elements such as images, data from other web servers or programs that run on the client.
+            In addition, it is often necessary to monitor the user’s work status, for example, if
+            you work with online store sites, for example, put some goods in the cart, and they
+            should remain there even if the user navigates to other pages on this site. HTTP
+            includes features for implementing these functions.
+          </aside>
+        </section>
+        <section>
+          <h1>the end</h1>
+          <img src="img/giphy.webp" alt="img" />
+          <aside class="notes">
+            At this point I finish my presentation. I hope you enjoyed the video and thanks for
+            watching. Bye!
+          </aside>
+        </section>
+      </div>
+    </div>
+    </div>
+    </div>
+   </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ],
+        transition: 'slide'
+      });
+    </script>
+  </body>
+</html>
